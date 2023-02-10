@@ -14,13 +14,6 @@ def minOperations(n):
     # 7n => H-Co-Pa-HH-Pa-3H-Pa-4H-Pa-5H-Pa-6H-Pa-HHHHHHH
     # 8n => H-Co-Pa-HH-Co-Pa-HHHH-Pa-HHHHHH-Pa-HHHHHHHH
     # 9n => H-Co-Pa-HH-Pa-HHH-Co-Pa-HHHHHH-Pa-HHHHHHHHH
-    # You can see a pattern here:
-    #    => it default starts with an "H" as indicated in the question
-    #    => whenever n can be cleanly divided by the current number of H
-    #       (n % current-number-of-H == 0), then next operation is Copy & Paste
-    #    => but if it is not, the next operation is simply paste.
-    #    => since it will start with 1 "H", which cleanly divides n,
-    #       it will first do Copy and Paste.
 
     file = 1
     copier = 0
