@@ -7,12 +7,12 @@ Your can assume n will be always an integer
 """
 
 def pascal_triangle(n):
-	"""
-	This function return a lists of integers represented the Pascal's triangle of n
-	"""
+"""
+This function return a list of integers in the Pascal's triangle of n
+"""
 	if n <= 0:
 		return []
 	pascal = [[1]]
 	for item in range(n-1):
-		pascal.append([i+j for i, j in zip([0] +pascal[-1], pascal[-1] + [0])])
+		pascal.append([i+j for i, j in zip([0] + pascal[-1], pascal[-1] + [0])])
 	return pascal
