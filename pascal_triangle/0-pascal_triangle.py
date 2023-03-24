@@ -7,6 +7,9 @@ Your can assume n will be always an integer
 """
 
 def pascal_triangle(n):
+	"""
+	This function return a lists of integers represented the Pascal's triangle of n
+	"""
 	if n <= 0:
 		return []
 	pascal = [[1]]
